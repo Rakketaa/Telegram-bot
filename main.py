@@ -256,13 +256,13 @@ def callback_worker(call):
         correct_answers += 1
 
     elif call.data == "eleventh_question":
-        bot.send_message(call.message.chat.id, f"Ура! Вы прошли тест!\n Вот ваш результат: {correct_answers}/10")
+        bot.send_message(call.message.chat.id, f"Ура! Вы прошли тест! 🎉\n\n➡️ Вот ваш результат: {correct_answers}/10")
         f = open("result.txt", 'a')
         f.write(f"Result: {correct_answers}/10, id: {call.message.chat.id}, date: {datetime.datetime.now() - start_time}\n")
         f.close()
     elif call.data == "eleventh_question_t":
         correct_answers += 1
-        bot.send_message(call.message.chat.id, f"Ура! Вы прошли тест!\n Вот ваш результат: {correct_answers}/10")
+        bot.send_message(call.message.chat.id, f"Ура! Вы прошли тест! 🎉\n\n➡️ Вот ваш результат: {correct_answers}/10")
         f = open("result.txt", 'a')
         f.write(f"Result: {correct_answers}/10, id: {call.message.chat.id}, date: {datetime.datetime.now() - start_time}\n")
         f.close()
