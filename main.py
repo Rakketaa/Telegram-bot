@@ -1,8 +1,9 @@
 import telebot
 import datetime
 from telebot import types
+import os
 
-bot = telebot.TeleBot("7011405100:AAGm9bDbPXWa2nmntxi2601A3IpUrJ0Y7cQ")
+bot = telebot.TeleBot(os.environ["API_KEY"])
 correct_answers = 0
 start_time = 0
 
