@@ -1,0 +1,4 @@
+import telebot
+import os
+
+bot = telebot.TeleBot(os.environ["API_KEY"])
